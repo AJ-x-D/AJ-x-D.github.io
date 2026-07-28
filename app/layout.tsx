@@ -1,31 +1,36 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Newsreader } from "next/font/google";
+import { Cormorant_Garamond, Manrope } from "next/font/google";
 import { headers } from "next/headers";
 import "./globals.css";
 
 // Deliberately not named --font-sans / --font-serif: Tailwind v4 already
 // defines those tokens on :root, which would shadow these.
-// The Latin webfonts carry no CJK glyphs, so the CJK fallbacks have to sit
-// directly behind them — next/font otherwise injects a bare generic family.
-const sans = Inter({
+const bodyFont = Manrope({
   variable: "--font-body-src",
   subsets: ["latin"],
+  weight: "variable",
   display: "swap",
-  fallback: ["PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "sans-serif"],
+  fallback: [
+    "PingFang SC",
+    "Microsoft YaHei UI",
+    "Microsoft YaHei",
+    "Noto Sans CJK SC",
+    "sans-serif",
+  ],
 });
 
-const serif = Newsreader({
+// Cormorant gives headings a quieter editorial character than Newsreader.
+// CJK text falls through to modern Song-style system faces.
+const displayFont = Cormorant_Garamond({
   variable: "--font-display-src",
   subsets: ["latin"],
+  weight: "variable",
   display: "swap",
-  // Latin serifs first — SimSun's half-width Latin glyphs look like a
-  // typewriter face. CJK falls through to the Han serifs behind them.
   fallback: [
-    "Georgia",
-    "Times New Roman",
     "Source Han Serif SC",
     "Noto Serif CJK SC",
     "Songti SC",
+    "STSong",
     "SimSun",
     "serif",
   ],
@@ -97,7 +102,9 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className={`${sans.variable} ${serif.variable}`}>{children}</body>
+      <body className={`${bodyFont.variable} ${displayFont.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }

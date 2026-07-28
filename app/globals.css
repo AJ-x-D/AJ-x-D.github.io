@@ -91,13 +91,16 @@ html {
    variables are declared on <body>, and a var() inside a custom property is
    substituted at the element where that property is declared. */
 body {
-  --font-display: var(--font-display-src), serif;
-  --font-body: var(--font-body-src), sans-serif;
+  --font-display: var(--font-display-src), "Source Han Serif SC",
+    "Noto Serif CJK SC", "Songti SC", "STSong", SimSun, serif;
+  --font-body: var(--font-body-src), "PingFang SC", "Microsoft YaHei UI",
+    "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
 
   margin: 0;
   background: var(--bg);
   color: var(--ink);
   font-family: var(--font-body);
+  font-optical-sizing: auto;
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -267,8 +270,9 @@ main {
 
 .brand-text strong {
   font-family: var(--font-display);
-  font-size: 0.95rem;
+  font-size: 1.04rem;
   font-weight: 600;
+  letter-spacing: 0.01em;
   line-height: 1.25;
   white-space: nowrap;
 }
@@ -449,9 +453,9 @@ main {
 .hero h1 {
   font-family: var(--font-display);
   font-size: clamp(3.2rem, 7.5vw, 6.2rem);
-  font-weight: 500;
-  letter-spacing: -0.035em;
-  line-height: 0.98;
+  font-weight: 600;
+  letter-spacing: -0.018em;
+  line-height: 0.92;
   margin: 0;
 }
 
@@ -472,6 +476,8 @@ html[lang^="zh"] .hero h1 {
   color: var(--sienna);
   font-family: var(--font-display);
   font-size: clamp(1.1rem, 1.9vw, 1.45rem);
+  font-weight: 500;
+  letter-spacing: 0.006em;
   line-height: 1.45;
   margin: 1.25rem 0 1.1rem;
 }
@@ -712,9 +718,9 @@ html[lang^="zh"] .hero h1 {
 .section-heading h2 {
   font-family: var(--font-display);
   font-size: clamp(2.1rem, 4.2vw, 3.4rem);
-  font-weight: 500;
-  letter-spacing: -0.025em;
-  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  line-height: 1.05;
   margin: 0;
 }
 
@@ -1127,9 +1133,9 @@ html[lang^="zh"] .section-heading h2 {
 .contact-section h2 {
   font-family: var(--font-display);
   font-size: clamp(2.4rem, 5.5vw, 4rem);
-  font-weight: 500;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.08;
   margin: 0;
 }
 
