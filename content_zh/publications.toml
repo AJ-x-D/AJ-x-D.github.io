@@ -1,0 +1,4 @@
+type = "publication"
+title = "论文"
+description = "已发表、可核验的研究成果。返修中论文列于项目与简历。"
+source = "publications.bib"

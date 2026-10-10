@@ -1,0 +1,4 @@
+type = "publication"
+title = "Publications"
+description = "Published research. The manuscript in revision is listed under Projects and CV."
+source = "publications.bib"

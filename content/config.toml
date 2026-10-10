@@ -1,0 +1,62 @@
+[site]
+title = "Aojie Xu | Academic Homepage"
+description = "Aojie Xu studies historical maps, historical GIS and interpretable GeoAI at South China Normal University."
+favicon = "/favicon.svg"
+last_updated = "October 2026"
+
+[author]
+name = "Aojie Xu"
+title = "M.Sc. student · Historical GIS & GeoAI"
+institution = "South China Normal University"
+avatar = "/profile.png"
+
+[social]
+email = "xuaojie@m.scnu.edu.cn"
+location = "Guangzhou, China"
+
+[features]
+enable_likes = false
+enable_one_page_mode = false
+
+[i18n]
+enabled = true
+locales = ["en", "zh"]
+default_locale = "en"
+mode = "fixed"
+fixed_locale = "en"
+persist = true
+switcher = true
+
+[i18n.labels]
+en = "English"
+zh = "中文"
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "Projects"
+type = "page"
+target = "projects"
+href = "/projects"
+
+[[navigation]]
+title = "Awards"
+type = "page"
+target = "awards"
+href = "/awards"
+
+[[navigation]]
+title = "CV"
+type = "page"
+target = "cv"
+href = "/cv"

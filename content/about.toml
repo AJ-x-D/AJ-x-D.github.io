@@ -1,0 +1,24 @@
+type = "about"
+title = "About"
+
+[profile]
+research_interests = ["Historical GIS & historical maps", "GeoAI & spatial heterogeneity", "Rural landscape change"]
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "bio.md"
+title = "About"
+
+[[sections]]
+id = "featured_publications"
+type = "publications"
+title = "Selected publication"
+filter = "selected"
+limit = 3
+
+[[sections]]
+id = "news"
+type = "list"
+title = "Recent work"
+source = "news.toml"

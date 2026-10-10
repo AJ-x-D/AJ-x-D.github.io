@@ -1,0 +1,31 @@
+type = "card"
+title = "Projects"
+description = "Research on historical maps, rural spatial memory and land-use change."
+
+[[items]]
+title = "Reconstructing Lingnan rural spatial memory with historical maps"
+subtitle = "Principal investigator · Guangdong Special Fund for Science and Technology Innovation Strategy"
+date = "2026"
+content = "A CNY 30,000 project using historical maps to reconstruct village spatial memory and explore culturally grounded revitalisation pathways."
+tags = ["Historical maps", "Rural memory", "Lingnan"]
+
+[[items]]
+title = "Historical map database and landscape change in the Pearl River Delta since the Qing dynasty"
+subtitle = "Lead student participant · Guangdong Philosophy and Social Sciences Planning"
+date = "2025–"
+content = "Contributing to the proposal, historical map feature recognition and database construction, field investigation and landscape-change analysis."
+tags = ["Historical GIS", "Spatial database", "Landscape change"]
+
+[[items]]
+title = "Spatiotemporal drivers of cropland abandonment"
+subtitle = "First-author manuscript · under revision at Transactions in GIS"
+date = "Ongoing"
+content = "Combines GeoXAI and geographically and temporally weighted regression to examine heterogeneous associations and threshold responses in Guangdong."
+tags = ["GeoXAI", "GTWR", "Cropland abandonment"]
+
+[[items]]
+title = "Geographical field-study design on the wartime migration of universities in South China"
+subtitle = "Team leader · National second prize"
+date = "2021"
+content = "Designed a context-aware geography field-study programme centered on Pingshi and the wartime relocation of South China universities."
+tags = ["Field study", "Historical geography"]

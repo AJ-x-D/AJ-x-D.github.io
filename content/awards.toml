@@ -1,0 +1,27 @@
+type = "card"
+title = "Awards"
+description = "Selected scholarships and academic honours."
+
+[[items]]
+title = "First-class Graduate Scholarship"
+subtitle = "South China Normal University"
+date = "2024–2026"
+content = "Awarded in the 2024–2025 and 2025–2026 academic years."
+
+[[items]]
+title = "Undergraduate Academic Scholarship"
+subtitle = "South China Normal University"
+date = "Four years"
+content = "Received in four consecutive academic years."
+
+[[items]]
+title = "Student Innovation Award"
+subtitle = "South China Normal University"
+date = "Three years"
+content = "Received in three consecutive academic years."
+
+[[items]]
+title = "National second prize · Geographical Field-Study Design"
+subtitle = "Geographical Society of China"
+date = "2021"
+content = "Team leader for a field-study design centred on Pingshi."

@@ -1,94 +1,115 @@
-import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Manrope } from "next/font/google";
-import { headers } from "next/headers";
-import "./globals.css";
-
-// Deliberately not named --font-sans / --font-serif: Tailwind v4 already
-// defines those tokens on :root, which would shadow these.
-const bodyFont = Manrope({
-  variable: "--font-body-src",
-  subsets: ["latin"],
-  weight: "variable",
-  display: "swap",
-  fallback: [
-    "PingFang SC",
-    "Microsoft YaHei UI",
-    "Microsoft YaHei",
-    "Noto Sans CJK SC",
-    "sans-serif",
-  ],
-});
-
-// Cormorant gives headings a quieter editorial character than Newsreader.
-// CJK text falls through to modern Song-style system faces.
-const displayFont = Cormorant_Garamond({
-  variable: "--font-display-src",
-  subsets: ["latin"],
-  weight: "variable",
-  display: "swap",
-  fallback: [
-    "Source Han Serif SC",
-    "Noto Serif CJK SC",
-    "Songti SC",
-    "STSong",
-    "SimSun",
-    "serif",
-  ],
-});
-
-// Applied before first paint so the stored theme never flashes.
-const themeScript = `(function(){try{var s=localStorage.getItem('theme');var d=s?s:(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=d;}catch(e){document.documentElement.dataset.theme='light';}})();`;
-
-export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f7f4ee" },
-    { media: "(prefers-color-scheme: dark)", color: "#0b1216" },
-  ],
-};
+import type { Metadata } from 'next';
+import './globals.css';
+import Navigation from '@/components/layout/Navigation';
+import Footer from '@/components/layout/Footer';
+import { ThemeProvider } from '@/components/ui/ThemeProvider';
+import { LocaleProvider } from '@/components/ui/LocaleProvider';
+import { getConfig } from '@/lib/config';
+import { getRuntimeI18nConfig } from '@/lib/i18n/config';
+import type { SiteConfig } from '@/lib/config';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const requestHeaders = await headers();
-  const host = requestHeaders.get("x-forwarded-host") ?? requestHeaders.get("host");
-  const protocol =
-    requestHeaders.get("x-forwarded-proto") ??
-    (host?.includes("localhost") ? "http" : "https");
-  const origin = host ? `${protocol}://${host}` : "https://aojie-xu.sites.openai.com";
-  const title = "Aojie Xu 徐鳌杰 | Historical GIS & GeoAI";
-  const description =
-    "Academic profile of Aojie Xu, an M.Sc. researcher at South China Normal University working on historical GIS, historical maps and interpretable GeoAI.";
+  const config = getConfig();
+  const runtimeI18n = getRuntimeI18nConfig(config.i18n);
+  const openGraphLocale = runtimeI18n.defaultLocale === 'zh' ? 'zh_CN' : 'en_US';
 
   return {
-    metadataBase: new URL(origin),
-    title,
-    description,
-    keywords: [
-      "Historical GIS",
-      "GeoAI",
-      "historical maps",
-      "explainable AI",
-      "Pearl River Delta",
-      "历史地理",
-      "历史地图",
-    ],
+    title: {
+      default: config.site.title,
+      template: `%s | ${config.site.title}`,
+    },
+    description: config.site.description,
+    keywords: [config.author.name, 'PhD', 'Research', config.author.institution],
+    authors: [{ name: config.author.name }],
+    creator: config.author.name,
+    publisher: config.author.name,
+    icons: {
+      icon: config.site.favicon,
+    },
     openGraph: {
-      title,
-      description,
-      type: "website",
-      images: [
-        {
-          url: `${origin}/og.jpg`,
-          width: 1200,
-          height: 630,
-          alt: "Aojie Xu - Historical GIS and GeoAI",
-        },
-      ],
+      type: 'website',
+      locale: openGraphLocale,
+      title: config.site.title,
+      description: config.site.description,
+      siteName: `${config.author.name}'s Academic Website`,
     },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [`${origin}/og.jpg`],
-    },
+  };
+}
+
+function buildLocaleBootstrapScript(config: ReturnType<typeof getRuntimeI18nConfig>): string {
+  const serializedConfig = JSON.stringify(config).replace(/</g, '\\u003c');
+
+  return `
+    try {
+      const cfg = ${serializedConfig};
+      const storageKey = 'locale-storage';
+      const normalize = (value) => typeof value === 'string' ? value.trim().replace('_', '-').toLowerCase() : '';
+      const matchLocale = (candidate) => {
+        const normalized = normalize(candidate);
+        if (!normalized) return null;
+        if (cfg.locales.includes(normalized)) return normalized;
+        const language = normalized.split('-')[0];
+        if (cfg.locales.includes(language)) return language;
+        return null;
+      };
+
+      let resolved = null;
+
+      if (!cfg.enabled) {
+        resolved = cfg.defaultLocale;
+      } else if (cfg.persist) {
+        resolved = matchLocale(localStorage.getItem(storageKey));
+      }
+
+      if (!resolved) {
+        if (cfg.mode === 'fixed') {
+          resolved = cfg.fixedLocale;
+        } else {
+          resolved = matchLocale(navigator.language);
+        }
+      }
+
+      if (!resolved) {
+        resolved = cfg.defaultLocale;
+      }
+
+      const root = document.documentElement;
+      root.lang = resolved;
+      root.setAttribute('data-locale', resolved);
+
+      if (cfg.persist) {
+        localStorage.setItem(storageKey, resolved);
+      }
+    } catch (e) {
+      const root = document.documentElement;
+      root.lang = '${config.defaultLocale}';
+      root.setAttribute('data-locale', '${config.defaultLocale}');
+    }
+  `;
+}
+
+function buildLocalizedConfigMaps(
+  locales: string[]
+): {
+  navigationByLocale: Record<string, SiteConfig['navigation']>;
+  siteTitleByLocale: Record<string, string>;
+  lastUpdatedByLocale: Record<string, string | undefined>;
+} {
+  const navigationByLocale: Record<string, SiteConfig['navigation']> = {};
+  const siteTitleByLocale: Record<string, string> = {};
+  const lastUpdatedByLocale: Record<string, string | undefined> = {};
+
+  for (const locale of locales) {
+    const localizedConfig = getConfig(locale);
+    navigationByLocale[locale] = localizedConfig.navigation;
+    siteTitleByLocale[locale] = localizedConfig.site.title;
+    lastUpdatedByLocale[locale] = localizedConfig.site.last_updated;
+  }
+
+  return {
+    navigationByLocale,
+    siteTitleByLocale,
+    lastUpdatedByLocale,
   };
 }
 
@@ -97,13 +118,67 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const config = getConfig();
+  const runtimeI18n = getRuntimeI18nConfig(config.i18n);
+  const targetLocales = runtimeI18n.enabled ? runtimeI18n.locales : [runtimeI18n.defaultLocale];
+
+  const {
+    navigationByLocale,
+    siteTitleByLocale,
+    lastUpdatedByLocale,
+  } = buildLocalizedConfigMaps(targetLocales);
+
   return (
-    <html lang="en" data-theme="light" suppressHydrationWarning>
+    <html lang={runtimeI18n.defaultLocale} className="scroll-smooth" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <link rel="icon" href={config.site.favicon} type="image/svg+xml" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const theme = localStorage.getItem('theme-storage');
+                const parsed = theme ? JSON.parse(theme) : null;
+                const setting = parsed?.state?.theme || 'system';
+                const prefersDark = typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const effective = setting === 'dark' ? 'dark' : (setting === 'light' ? 'light' : (prefersDark ? 'dark' : 'light'));
+                var root = document.documentElement;
+                root.classList.add(effective);
+                root.setAttribute('data-theme', effective);
+              } catch (e) {
+                var root = document.documentElement;
+                root.classList.add('light');
+                root.setAttribute('data-theme', 'light');
+              }
+            `,
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: buildLocaleBootstrapScript(runtimeI18n),
+          }}
+        />
       </head>
-      <body className={`${bodyFont.variable} ${displayFont.variable}`}>
-        {children}
+      <body className="font-sans antialiased">
+        <ThemeProvider>
+          <LocaleProvider config={runtimeI18n}>
+            <Navigation
+              items={config.navigation}
+              siteTitle={config.site.title}
+              enableOnePageMode={config.features.enable_one_page_mode}
+              i18n={runtimeI18n}
+              itemsByLocale={navigationByLocale}
+              siteTitleByLocale={siteTitleByLocale}
+            />
+            <main className="min-h-screen pt-16 lg:pt-20">
+              {children}
+            </main>
+            <Footer
+              lastUpdated={config.site.last_updated}
+              lastUpdatedByLocale={lastUpdatedByLocale}
+              defaultLocale={runtimeI18n.defaultLocale}
+            />
+          </LocaleProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
