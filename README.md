@@ -22,6 +22,13 @@ npm run build
 
 The static site is exported to `out/`. The existing Sites project ID is retained in `.openai/hosting.json`.
 
+## GitHub Pages
+
+The homepage is published at https://aj-x-d.github.io/ from the `AJ-x-D/AJ-x-D.github.io` repository.
+Every push to `main` builds the static website with Node.js 22 and deploys it through `.github/workflows/pages.yml`.
+To update the homepage, edit the content or components, commit the changes, and push `main`.
+The repository's Settings → Pages → Source must be set to **GitHub Actions**.
+
 ## Attribution
 
 The website is adapted from PRISM by xyjoey under the MIT license. See `LICENSE` for the upstream license text.
