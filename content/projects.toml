@@ -1,6 +1,6 @@
 type = "card"
-title = "Projects"
-description = "Research on historical maps, rural spatial memory and land-use change."
+title = "Research & practice projects"
+description = "Research on historical maps and land use, alongside earlier GIS, fieldwork and geography education projects."
 
 [[items]]
 title = "Reconstructing Lingnan rural spatial memory with historical maps"
@@ -13,19 +13,68 @@ tags = ["Historical maps", "Rural memory", "Lingnan"]
 title = "Historical map database and landscape change in the Pearl River Delta since the Qing dynasty"
 subtitle = "Lead student participant · Guangdong Philosophy and Social Sciences Planning"
 date = "2025–"
-content = "Contributing to the proposal, historical map feature recognition and database construction, field investigation and landscape-change analysis."
+content = "Contributing to the proposal, historical map feature recognition and database construction, field investigation and analysis of landscape-change mechanisms. Supported through the programme for rare and specialised disciplines."
 tags = ["Historical GIS", "Spatial database", "Landscape change"]
 
 [[items]]
+title = "Digital reconstruction of Guangzhou’s urban spatial structure, 1840–2025"
+subtitle = "Proposal contributor · Lead student participant"
+date = "2025"
+content = "Contributed to a Guangzhou Philosophy and Social Sciences Planning grant proposal."
+tags = ["Urban historical geography", "Digital reconstruction", "Grant proposal"]
+
+[[items]]
 title = "Spatiotemporal drivers of cropland abandonment"
-subtitle = "First-author manuscript · under revision at Transactions in GIS"
+subtitle = "First-author manuscript · Under revision at Transactions in GIS"
 date = "Ongoing"
-content = "Combines GeoXAI and geographically and temporally weighted regression to examine heterogeneous associations and threshold responses in Guangdong."
+content = "Combines GeoXAI and geographically and temporally weighted regression to examine heterogeneous associations and threshold responses in Guangdong. Responsible for data collection, method design, analysis, validation and writing."
 tags = ["GeoXAI", "GTWR", "Cropland abandonment"]
 
 [[items]]
-title = "Geographical field-study design on the wartime migration of universities in South China"
-subtitle = "Team leader · National second prize"
-date = "2021"
-content = "Designed a context-aware geography field-study programme centered on Pingshi and the wartime relocation of South China universities."
-tags = ["Field study", "Historical geography"]
+title = "Mapping abandoned cropland and its drivers in cloudy subtropical regions using long-term remote sensing"
+subtitle = "Second project lead · SCNU Undergraduate Innovation and Entrepreneurship Training Programme"
+date = "Undergraduate"
+content = "Contributed to reporting, Google Earth Engine code, field investigation, driver analysis and the final presentation. The project received an Excellent completion rating."
+tags = ["Remote-sensing time series", "GEE", "Excellent completion"]
+
+[[items]]
+title = "Cropland recultivation governance: fieldwork in six villages in Zhanjiang"
+subtitle = "Project lead · First prize in the SCNU Challenge Cup"
+date = "2022.09–2023.01"
+content = "Planned fieldwork, coordinated village contacts, interviewed farmers, contractors and village committees, visited fields and prepared the research report."
+tags = ["Fieldwork", "Recultivation", "Rural governance"]
+
+[[items]]
+title = "Resident perceptions and the safeguarding of Lechang Huagu opera"
+subtitle = "Project member"
+date = "2022.07–2022.09"
+content = "Planned fieldwork routes, contacted intangible-cultural-heritage practitioners, and contributed to questionnaire design, surveys and interviews."
+tags = ["Cultural heritage", "Resident perceptions", "Lechang"]
+
+[[items]]
+title = "Domestic communication effects of the Beijing 2022 Winter Olympics opening ceremony"
+subtitle = "Project lead"
+date = "2021.12–2022.03"
+content = "Designed survey scales, coordinated the team and conducted sentiment, word-frequency, social-network and semantic-network analyses."
+tags = ["Survey research", "Text analysis", "Social networks"]
+
+[[items]]
+title = "Science communication at Guangzhou Haizhu National Wetland Park"
+subtitle = "Project lead"
+date = "2021.10–2021.12"
+content = "Designed questionnaires, coordinated field surveys, performed descriptive statistics and reliability and validity checks, and helped compile the report."
+tags = ["Wetland park", "Science communication", "Questionnaire survey"]
+
+[[items]]
+title = "A context-aware geography field-study programme in Pingshi"
+subtitle = "Team leader · National second prize, Human Geography category"
+date = "2021.08–2021.12"
+content = "Designed a field-study programme about the wartime relocation of universities in South China. Organised fieldwork, interviews, team assignments and the activity schedule."
+tags = ["Field study", "Historical geography", "Pingshi"]
+
+[[items]]
+title = "Passenger-airport service capacity and air connectivity in the Greater Bay Area"
+subtitle = "Project lead"
+date = "2020.11–2021.07"
+content = "Coordinated the research design, selected accessibility models, contributed road vectorisation and delivered presentations and the project defence."
+tags = ["Transport geography", "Accessibility", "GIS"]

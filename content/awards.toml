@@ -1,6 +1,6 @@
 type = "card"
 title = "Awards"
-description = "Selected scholarships and academic honours."
+description = "Selected scholarships and honours in GIS, geography education, research competitions and social practice."
 
 [[items]]
 title = "First-class Graduate Scholarship"
@@ -9,19 +9,73 @@ date = "2024–2026"
 content = "Awarded in the 2024–2025 and 2025–2026 academic years."
 
 [[items]]
-title = "Undergraduate Academic Scholarship"
+title = "Undergraduate Academic Scholarships"
 subtitle = "South China Normal University"
-date = "Four years"
-content = "Received in four consecutive academic years."
+date = "Four consecutive years"
+content = "Received in four consecutive academic years, including a first-class award in 2022–2023 and individual awards for social practice and entrepreneurship (2020–2021) and labour literacy (2021–2022)."
 
 [[items]]
-title = "Student Innovation Award"
+title = "First prize · SCNU Challenge Cup"
 subtitle = "South China Normal University"
-date = "Three years"
-content = "Received in three consecutive academic years."
+date = "10th edition"
+content = "Project leader for a study of cropland recultivation governance based on fieldwork in six Zhanjiang villages."
 
 [[items]]
-title = "National second prize · Geographical Field-Study Design"
-subtitle = "Geographical Society of China"
+title = "National Geography Field-Study Design and Social Research Competition"
+subtitle = "Second prize, Human Geography · Third prize, Social Research"
 date = "2021"
-content = "Team leader for a field-study design centred on Pingshi."
+content = "Led the Pingshi field-study design project; competition organised by the Geographical Society of China."
+
+[[items]]
+title = "Esri Cup China College Student GIS Software Development Competition"
+subtitle = "Third prize and Merit Award · Map Design"
+date = "2021"
+content = "Awards in the map design category."
+
+[[items]]
+title = "SuperMap GIS Contest, China Division"
+subtitle = "Encouragement Award · Cartography"
+date = "2021"
+content = "Recognised in the cartography category."
+
+[[items]]
+title = "National Geography Teaching Research Achievement Competition"
+subtitle = "Grand prize · Paper category · 3rd Jingwei Cup"
+date = "3rd edition"
+content = "Recognised for a geography education research paper."
+
+[[items]]
+title = "National Geography Teaching Cartography Competition"
+subtitle = "Third prize · 3rd Zhongjiao Qixing Cup"
+date = "3rd edition"
+content = "Recognised for geography teaching cartography."
+
+[[items]]
+title = "Third prize · National Study-Tour Curriculum Design Competition"
+subtitle = "Curriculum design"
+date = "2022"
+content = "Recognised for study-tour curriculum design."
+
+[[items]]
+title = "Merit Award · Rural Culture Fieldwork Programme"
+subtitle = "Guangdong provincial programme · Research report"
+date = "2022"
+content = "Recognised for a report in the Diverse Villages, Promoting Lingnan Culture programme."
+
+[[items]]
+title = "First prize · Winter Social Practice Research Competition"
+subtitle = "South China Normal University"
+date = "2022"
+content = "Recognised for a social practice research project."
+
+[[items]]
+title = "Student Innovation Awards"
+subtitle = "South China Normal University"
+date = "Three consecutive years"
+content = "Received in three consecutive years, including a Merit Award in 2021 and third prize in 2022."
+
+[[items]]
+title = "Outstanding Individual in Summer Social Practice"
+subtitle = "South China Normal University"
+date = "2022"
+content = "Individual recognition for summer social practice."

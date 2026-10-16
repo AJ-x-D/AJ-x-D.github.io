@@ -1,5 +1,5 @@
-I am an M.Sc. student in Cartography and Geographic Information Systems at the School of Geography, South China Normal University. My research connects **historical maps**, spatial data and interpretable GeoAI to study long-term human–environment relationships.
+I am an M.Sc. student in Cartography and Geographic Information Systems at the School of Geography, South China Normal University, where I began my graduate studies in September 2024. I also studied Geographic Information Science at SCNU as an undergraduate. My research connects **historical maps**, spatial data and interpretable GeoAI to study long-term human–environment relationships.
 
-My current work has two threads: building usable spatial evidence from historical maps of the Pearl River Delta, and studying spatially heterogeneous drivers of cropland abandonment. I am interested in PhD opportunities that bring historical geography and geographic information science together.
+My current work has two threads: building usable spatial evidence from historical maps of the Pearl River Delta, and studying spatially heterogeneous drivers of cropland abandonment. Earlier undergraduate innovation and Challenge Cup projects involved remote-sensing approaches to cropland abandonment and fieldwork in six villages in Zhanjiang. I have also worked on cultural heritage and geography field-study projects in Lingnan. These experiences inform my interest in combining spatial analysis with field evidence.
 
-You can reach me at [xuaojie@m.scnu.edu.cn](mailto:xuaojie@m.scnu.edu.cn).
+I am interested in PhD opportunities that bring historical geography and geographic information science together. You can reach me at [xuaojie@m.scnu.edu.cn](mailto:xuaojie@m.scnu.edu.cn).
