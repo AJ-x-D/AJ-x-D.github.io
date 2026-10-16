@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Disclosure } from '@headlessui/react';
@@ -181,9 +182,18 @@ export default function Navigation({
                 >
                   <Link
                     href="/"
-                    className="text-xl lg:text-2xl font-serif font-semibold text-primary hover:text-accent transition-colors duration-200"
+                    aria-label={effectiveSiteTitle}
+                    className="inline-flex flex-shrink-0 rounded-xl transition-opacity duration-200 hover:opacity-80"
                   >
-                    {effectiveSiteTitle}
+                    <Image
+                      src="/favicon.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width={48}
+                      height={48}
+                      priority
+                      className="h-10 w-10 object-contain lg:h-12 lg:w-12"
+                    />
                   </Link>
                 </motion.div>
 

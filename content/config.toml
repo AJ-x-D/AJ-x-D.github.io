@@ -13,6 +13,7 @@ avatar = "/profile-hunan-retouched.png"
 [social]
 email = "xuaojie@m.scnu.edu.cn"
 location = "Guangzhou, China"
+location_details = ["School of Geography, South China Normal University", "No. 55 Zhongshan Avenue West, Tianhe District", "Guangzhou, Guangdong 510631, China"]
 
 [features]
 enable_likes = false

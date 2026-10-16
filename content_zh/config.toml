@@ -10,6 +10,7 @@ institution = "华南师范大学 · 地理科学学院"
 
 [social]
 location = "中国 · 广州"
+location_details = ["华南师范大学（石牌校园）地理科学学院", "广东省广州市天河区中山大道西55号", "邮编：510631"]
 
 [[navigation]]
 title = "关于我"

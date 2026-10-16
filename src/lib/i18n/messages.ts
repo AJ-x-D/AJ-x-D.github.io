@@ -19,8 +19,6 @@ export interface LocaleMessages {
     workAddress: string;
     click: string;
     googleMap: string;
-    send: string;
-    sendEmail: string;
     researchInterests: string;
     like: string;
     liked: string;
@@ -69,8 +67,6 @@ const en: LocaleMessages = {
     workAddress: 'Work Address',
     click: 'Click',
     googleMap: 'Google Map',
-    send: 'Send',
-    sendEmail: 'Send Email',
     researchInterests: 'Research Interests',
     like: 'Like',
     liked: 'Liked',
@@ -119,8 +115,6 @@ const zh: LocaleMessages = {
     workAddress: '办公地址',
     click: '点击',
     googleMap: '谷歌地图',
-    send: '发送',
-    sendEmail: '发送邮件',
     researchInterests: '研究兴趣',
     like: '点赞',
     liked: '已点赞',
