@@ -1,0 +1,40 @@
+.backdrop {
+  --landscape-ink: #547c72;
+  --landscape-mist: #fefffe;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--background);
+}
+
+:global(.dark) .backdrop {
+  --landscape-ink: #81a7ac;
+  --landscape-mist: #0f172a;
+}
+
+.sky { position: absolute; inset: 0; background: linear-gradient(175deg, transparent 40%, rgb(147 172 155 / 3%) 75%, rgb(118 153 153 / 6%)); }
+.layer { position: absolute; inset: 0; width: 100%; height: 100%; color: var(--landscape-ink); }
+.ridge0 { opacity: 0.13; }
+.ridge1 { opacity: 0.18; }
+.ridge2 { opacity: 0.23; }
+.mist { position: absolute; top: 48%; left: -30%; width: 160%; height: 45%; background: radial-gradient(ellipse at center, var(--landscape-mist) 8%, transparent 68%); animation: mistDrift 32s ease-in-out infinite alternate; }
+.readingVeil { position: absolute; inset: 0; background: radial-gradient(ellipse 54% 70% at 53% 35%, var(--background) 20%, transparent 100%); }
+
+@keyframes mistDrift {
+  from { transform: translate3d(-10%, 2%, 0) scaleY(0.85); opacity: 0.55; }
+  to { transform: translate3d(10%, -3%, 0) scaleY(1.1); opacity: 0.95; }
+}
+
+@media (max-width: 639px) {
+  .layer { width: 180%; left: -40%; }
+  .ridge0 { opacity: 0.1; }
+  .ridge1 { opacity: 0.14; }
+  .ridge2 { opacity: 0.18; }
+  .readingVeil { background: radial-gradient(ellipse 85% 70% at 50% 30%, var(--background) 20%, transparent); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mist { animation: none; opacity: 0.75; }
+}
