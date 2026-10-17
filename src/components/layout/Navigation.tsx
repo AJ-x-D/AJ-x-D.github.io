@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Disclosure } from '@headlessui/react';
@@ -185,15 +184,25 @@ export default function Navigation({
                     aria-label={effectiveSiteTitle}
                     className="inline-flex flex-shrink-0 rounded-xl transition-opacity duration-200 hover:opacity-80"
                   >
-                    <Image
-                      src="/favicon.svg"
-                      alt=""
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="420 24 680 680"
+                      fill="none"
                       aria-hidden="true"
+                      focusable="false"
                       width={48}
                       height={48}
-                      priority
-                      className="h-10 w-10 object-contain lg:h-12 lg:w-12"
-                    />
+                      className="h-10 w-10 lg:h-12 lg:w-12"
+                    >
+                      <path
+                        className="fill-[#1E293B] dark:fill-[#FBF7EF]"
+                        d="M461 574C571 513 645 400 721 253C735 227 748 217 763 237C809 298 839 433 999 520C905 495 817 447 774 380C758 355 741 340 722 357C667 401 601 515 461 574Z"
+                      />
+                      <path
+                        fill="#D4A562"
+                        d="M985 155C1030 192 1053 249 1051 295C1049 360 1009 407 954 407C915 407 883 385 868 346C892 375 928 382 961 365C1017 336 1035 244 985 155Z"
+                      />
+                    </svg>
                   </Link>
                 </motion.div>
 
