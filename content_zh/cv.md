@@ -156,4 +156,4 @@
 
 ## 联系方式
 
-[xuaojie@m.scnu.edu.cn](mailto:xuaojie@m.scnu.edu.cn) · [18575105876](tel:+8618575105876)
+[xuaojie@m.scnu.edu.cn](mailto:xuaojie@m.scnu.edu.cn)

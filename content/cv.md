@@ -156,4 +156,4 @@ Former deputy director and staff member of the SCNU Youth Culture Centre; contri
 
 ## Contact
 
-[xuaojie@m.scnu.edu.cn](mailto:xuaojie@m.scnu.edu.cn) · [18575105876](tel:+8618575105876)
+[xuaojie@m.scnu.edu.cn](mailto:xuaojie@m.scnu.edu.cn)
