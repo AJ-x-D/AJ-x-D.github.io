@@ -13,6 +13,11 @@ export interface PublicationPageConfig extends BasePageConfig {
 export interface TextPageConfig extends BasePageConfig {
     type: 'text';
     source: string;
+    download?: {
+        label: string;
+        href: string;
+        filename: string;
+    };
 }
 
 export interface CardItem {

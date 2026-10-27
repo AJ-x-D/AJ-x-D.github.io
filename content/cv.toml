@@ -1,3 +1,8 @@
 type = "text"
 title = "Detailed CV"
 source = "cv.md"
+
+[download]
+label = "Download CV (Chinese PDF)"
+href = "/files/aojie-xu-cv-zh.pdf"
+filename = "Xu_Aojie_CV_ZH.pdf"

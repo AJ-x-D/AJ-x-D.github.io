@@ -1,3 +1,8 @@
 type = "text"
 title = "详细简历"
 source = "cv.md"
+
+[download]
+label = "下载中文 PDF"
+href = "/files/aojie-xu-cv-zh.pdf"
+filename = "徐鳌杰_中文学术简历.pdf"

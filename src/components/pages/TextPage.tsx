@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
+import { Download } from 'lucide-react';
 import { TextPageConfig } from '@/types/page';
 
 interface TextPageProps {
@@ -18,7 +19,19 @@ export default function TextPage({ config, content, embedded = false }: TextPage
             transition={{ duration: 0.6, delay: 0.4 }}
             className={embedded ? "" : "max-w-3xl mx-auto"}
         >
-            <h1 className={`${embedded ? "text-2xl" : "text-4xl"} font-serif font-bold text-primary mb-4`}>{config.title}</h1>
+            <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+                <h1 className={`${embedded ? "text-2xl" : "text-4xl"} min-w-0 font-serif font-bold text-primary`}>{config.title}</h1>
+                {config.download && (
+                    <a
+                        href={config.download.href}
+                        download={config.download.filename}
+                        className="inline-flex w-fit shrink-0 items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-accent-dark transition-colors hover:bg-accent/10 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent dark:text-accent"
+                    >
+                        <Download size={16} aria-hidden="true" />
+                        {config.download.label}
+                    </a>
+                )}
+            </div>
             {config.description && (
                 <p className={`${embedded ? "text-base" : "text-lg"} text-neutral-600 dark:text-neutral-500 mb-8 max-w-2xl`}>
                     {config.description}
