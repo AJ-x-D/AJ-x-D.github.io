@@ -2,7 +2,7 @@ type = "about"
 title = "关于我"
 
 [profile]
-research_interests = ["历史 GIS 与历史地图智能解译", "可解释地理人工智能", "时空分析"]
+research_interests = ["历史 GIS 与历史地图解译", "数字人文", "可解释地理人工智能", "AI for Science"]
 
 [[sections]]
 id = "about"

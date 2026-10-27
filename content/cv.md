@@ -6,14 +6,14 @@ Supervisor: Professor Guilin Liu · GPA 4.02/5 · Programme rank 1/19
 
 Selected courses: Machine Learning and Artificial Intelligence (97), Geographical Research Methods (96), Geographic Information Systems Laboratory (96), Academic Writing and Research Ethics (93).
 
-**Undergraduate studies, Geographic Information Science**\
+**B.Sc., Geographic Information Science**\
 South China Normal University · September 2020–June 2024
 
 ## Research interests
 
-Historical GIS and intelligent interpretation of historical maps; interpretable GeoAI; spatiotemporal analysis.
+Historical GIS and historical map interpretation; digital humanities; interpretable GeoAI; AI for Science.
 
-**Prospective directions:** Digital humanities, human–computer interaction and AI for Science.
+**Prospective directions:** Digital humanities and AI for Science.
 
 ## Published articles
 
@@ -30,12 +30,12 @@ Historical GIS and intelligent interpretation of historical maps; interpretable 
 **Under revision · Transactions in GIS · First author**\
 **Aojie Xu**, Kejun Liu, Yuecheng Li, Zhuohang Ye, Guilin Liu.
 
-### Projecting sugarcane suitability shifts in China under future climate scenarios.
+### Projecting sugarcane suitability shifts in China under future climate scenarios
 
 **Preparing for submission · First author**\
 **Aojie Xu**, Yingchen Lin, Zibin Liang, Tianrui Zhou, Yongquan Lu, Guilin Liu.
 
-### Mapping historical land cover in 1960s using object-based image analysis and Keyhole spy satellite images in Guangzhou.
+### Mapping historical land cover in the 1960s using object-based image analysis and Keyhole spy satellite images in Guangzhou
 
 **Preparing for submission · First author**\
 **Aojie Xu**, Tianrui Zhou, Guilin Liu.
@@ -62,29 +62,29 @@ Developed for image annotation in ArcMap, the project combines a microcontroller
 
 **My contribution:** Early testing, human–computer interaction feature design and later testing.
 
-**Project outputs:** Three physical prototypes, one control programme and one utility-model patent arising from the project; passed the completion review in June 2026.
+**Project outputs:** Three physical prototypes, one control programme and one utility-model patent arising from the project; completed in June 2026. In example tests, annotation time for regular fields decreased from 40 to 15 minutes, and for irregular terraced fields from over one hour to 20 minutes.
 
 ### Effects of multi-year cotton planting patterns on yield through assimilation of optical remote sensing and crop models
 
 **Project participant · National Natural Science Foundation of China, General Programme** · 2023.01–2026.12
 
-**Grant 42271346; principal investigator: Guilin Liu.** Integrates optical remote sensing and crop models to study how multi-year cotton planting patterns affect crop growth and yield. Wrote approximately 30%–40% of the proposal and contributed image-sample annotation and data processing during project implementation.
+**Grant 42271346; principal investigator: Guilin Liu.** Integrates optical remote sensing and crop models to study how multi-year cotton planting patterns affect crop growth and yield. Wrote approximately 20%–30% of the proposal and contributed field sampling, image-sample annotation and data processing during project implementation.
 
 ### Spatiotemporal trade-offs and synergies among water, food and cotton, and optimisation of grain–cotton planting patterns in arid regions
 
-**Project participant · National Natural Science Foundation of China** · 2027.01–2030.12
+**Project participant · National Natural Science Foundation of China, General Programme** · 2027.01–2030.12
 
-**Scheduled project period: January 2027–December 2030; principal investigator: Guilin Liu.** Wrote approximately 50%–60% of the proposal, joined discussions of the core scientific questions, and contributed preparatory work including remote-sensing image annotation and data processing.
+**Grant 42671376; scheduled project period: January 2027–December 2030; principal investigator: Guilin Liu.** Wrote approximately 50%–60% of the proposal, joined discussions of the core scientific questions, and contributed preparatory work including remote-sensing image annotation and data processing.
 
 ### Tracing roots and building belonging: diagnosing and repairing ruptures in Lingnan rural spatial memory through GIS and oral history
 
 **Project member · SCNU School of Geography Zhouji Innovation and Entrepreneurship Incubation Programme** · 2026
 
-**Project DKZJ202606; project lead: Zhixuan Dong.** Combines maps from multiple periods, remote-sensing imagery, village gazetteers and oral histories to locate ruptures in the memory of village public spaces, examine links with place identity and community cohesion, and explore ways to repair cultural memory. Guided the overall research approach and framework; the project grew out of the Climbing Programme project I lead.
+**Project DKZJ202606; project lead: Zhixuan Dong.** Combines maps from multiple periods, remote-sensing imagery, village gazetteers and oral histories to locate ruptures in the memory of village public spaces, examine links with place identity and community cohesion, and explore ways to repair cultural memory. Guided the overall research approach and framework; the project grew out of the Guangdong-funded historical-map project I lead (above).
 
 ### Abandoned-cropland identification and driver analysis using long-term remote-sensing imagery in cloudy, rainy subtropical regions
 
-**Second project lead · Student Innovation and Entrepreneurship Training Programme** · Undergraduate studies
+**Second project lead · Student Innovation and Entrepreneurship Training Programme** · 2022.04–2023.04
 
 Contributed research reports, Google Earth Engine code, field investigation and the final presentation. The project received an Excellent completion rating. Provided the abandoned-cropland identification algorithm based on cultivated/uncultivated binary maps for the JAG article.
 
@@ -124,11 +124,11 @@ Presented research at the 11th Youth Geoscience Forum. Attended two summer schoo
 
 ### Teaching assistantships
 
-Served as a teaching assistant for both courses, including a focused teaching session and discussion on the relationship between AI and people.
+Served as a teaching assistant for Remote Sensing: An Introduction and Remote Sensing Software Applications, including a focused teaching session and discussion on the relationship between AI and people.
 
 ### Journal peer review
 
-Reviewer for the International Journal of Geographical Information Science (IJGIS), JRS and npj Heritage Science.
+Reviewer for the International Journal of Geographical Information Science (IJGIS), Journal of Rural Studies and npj Heritage Science.
 
 ### National Games volunteering
 
@@ -144,7 +144,7 @@ Former deputy director and staff member of the SCNU Youth Culture Centre; contri
 
 ## Methods & skills
 
-- **AI-assisted research:** Claude Code, Codex, OpenClaw, Hermes and Zcode for data processing, code development and debugging, and research workflow organisation in historical geography.
+- **AI-assisted research:** Claude Code, Codex, Hermes and Zcode for data processing, code development and debugging, and research workflow organisation.
 
 - **Programming and spatial analysis:** Python, R and Google Earth Engine (JavaScript); remote-sensing image processing, spatial analysis and statistical modelling.
 

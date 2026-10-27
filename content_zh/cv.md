@@ -6,14 +6,14 @@
 
 主要课程：机器学习与人工智能（97）、地理学研究方法（96）、地理信息系统实验（96）、论文写作与学术规范（93）。
 
-**本科 · 地理信息科学**\
+**理学学士 · 地理信息科学**\
 华南师范大学 · 2020.09–2024.06
 
 ## 研究兴趣
 
-历史 GIS 与历史地图智能解译；可解释地理人工智能；时空分析。
+历史 GIS 与历史地图解译；数字人文；可解释地理人工智能；AI for Science。
 
-**拟拓展方向：** 数字人文、人机交互、AI for Science。
+**拟拓展方向：** 数字人文、AI for Science。
 
 ## 已发表论文
 
@@ -30,12 +30,12 @@
 **返修中 · Transactions in GIS · 第一作者**\
 **Aojie Xu**, Kejun Liu, Yuecheng Li, Zhuohang Ye, Guilin Liu.
 
-### Projecting sugarcane suitability shifts in China under future climate scenarios.
+### Projecting sugarcane suitability shifts in China under future climate scenarios
 
 **准备投稿 · 第一作者**\
 **Aojie Xu**, Yingchen Lin, Zibin Liang, Tianrui Zhou, Yongquan Lu, Guilin Liu.
 
-### Mapping historical land cover in 1960s using object-based image analysis and Keyhole spy satellite images in Guangzhou.
+### Mapping historical land cover in the 1960s using object-based image analysis and Keyhole spy satellite images in Guangzhou
 
 **准备投稿 · 第一作者**\
 **Aojie Xu**, Tianrui Zhou, Guilin Liu.
@@ -62,29 +62,29 @@
 
 **主要工作：** 参与前期测试、人机交互功能设计及后期测试。
 
-**课题成果：** 形成 3 套实物样机及 1 套控制程序，孵化实用新型专利 1 项；2026 年 6 月通过结项验收。
+**课题成果：** 形成 3 套实物样机及 1 套控制程序，孵化实用新型专利 1 项；2026 年 6 月结项。示例测试中，规整条田标注用时由 40 分钟缩短至 15 分钟，不规则阶梯形条田由超过 1 小时缩短至 20 分钟。
 
 ### 同化光学遥感与作物模型的棉花多年种植模式对产量的影响机制研究
 
 **项目参与 · 国家自然科学基金面上项目** · 2023.01–2026.12
 
-**批准号：42271346；负责人：刘桂林。** 融合光学遥感与作物模型，研究棉花多年种植模式对作物生长及产量的影响。承担约 30%–40% 的项目申报书撰写；在项目执行阶段参与遥感影像样本标注、数据处理等工作。
+**批准号：42271346；负责人：刘桂林。** 融合光学遥感与作物模型，研究棉花多年种植模式对作物生长及产量的影响。承担约 20%–30% 的项目申报书撰写；在项目执行阶段参与野外采样、遥感影像样本标注、数据处理等工作。
 
 ### 干旱区“水-粮-棉”时空权衡协同机制与粮棉种植模式优化
 
-**项目参与 · 国家自然科学基金项目** · 2027.01–2030.12
+**项目参与 · 国家自然科学基金面上项目** · 2027.01–2030.12
 
-**项目执行期：2027 年 1 月至 2030 年 12 月；负责人：刘桂林。** 承担约 50%–60% 的项目申报书撰写，参与核心科学问题的讨论，以及遥感影像样本标注、数据处理等前期准备工作。
+**批准号：42671376；项目执行期：2027 年 1 月至 2030 年 12 月；负责人：刘桂林。** 承担约 50%–60% 的项目申报书撰写，参与核心科学问题的讨论，以及遥感影像样本标注、数据处理等前期准备工作。
 
 ### 寻脉与凝心：岭南乡村空间记忆“断裂点”的社会诊断与修复路径——基于 GIS 与口述史的混合调查
 
 **项目成员 · 华南师范大学地理科学学院“洲际”创新创业培育计划** · 2026
 
-**项目编号：DKZJ202606；负责人：董祉暄。** 结合多期地图、遥感影像、村志与口述史，定位乡村公共空间的记忆断裂点，分析空间变化与地方认同、社区凝聚力的关系，探索文化记忆修复路径。指导项目总体研究思路与框架梳理；该项目由本人主持的“攀登计划”项目延伸培育。
+**项目编号：DKZJ202606；负责人：董祉暄。** 结合多期地图、遥感影像、村志与口述史，定位乡村公共空间的记忆断裂点，分析空间变化与地方认同、社区凝聚力的关系，探索文化记忆修复路径。指导项目总体研究思路与框架梳理；该项目由本人主持的广东省资助历史地图项目（见上文）延伸培育。
 
 ### 基于长时序遥感影像的亚热带多云多雨地区撂荒耕地识别与影响机制探究
 
-**第二负责人 · 大学生创新创业训练计划** · 本科阶段
+**第二负责人 · 大学生创新创业训练计划** · 2022.04–2023.04
 
 参与研究报告撰写、Google Earth Engine 代码编写、实地考察及结项答辩；项目结项评级优秀。为 JAG 论文提供基于耕地／未耕地二元图的撂荒耕地识别算法代码。
 
@@ -124,11 +124,11 @@
 
 ### 课程助教
 
-担任两门课程助教；在助教课堂围绕“AI 与人的关系”开展专题教学与讨论。
+担任《遥感概论》《遥感软件应用技术》课程助教；在助教课堂围绕“AI 与人的关系”开展专题教学与讨论。
 
 ### 期刊审稿
 
-担任 International Journal of Geographical Information Science（IJGIS）、JRS、npj Heritage Science 审稿人。
+担任 International Journal of Geographical Information Science（IJGIS）、Journal of Rural Studies、npj Heritage Science 审稿人。
 
 ### 十五运会志愿服务
 
@@ -144,7 +144,7 @@
 
 ## 个人技能
 
-- **AI 辅助科研：** 熟练使用 Claude Code、Codex、OpenClaw、Hermes、Zcode 等 Agent 工具，辅助历史地理研究中的数据处理、代码编写与调试及研究流程组织。
+- **AI 辅助科研：** 熟练使用 Claude Code、Codex、Hermes、Zcode 等 Agent 工具，辅助科研中的数据处理、代码编写与调试及研究流程组织。
 
 - **编程与空间分析：** Python、R、Google Earth Engine（JavaScript）；遥感影像处理、空间分析与统计建模。
 

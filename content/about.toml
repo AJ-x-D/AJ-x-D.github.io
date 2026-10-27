@@ -2,7 +2,7 @@ type = "about"
 title = "About"
 
 [profile]
-research_interests = ["Historical GIS & intelligent map interpretation", "Interpretable GeoAI", "Spatiotemporal analysis"]
+research_interests = ["Historical GIS & historical map interpretation", "Digital humanities", "Interpretable GeoAI", "AI for Science"]
 
 [[sections]]
 id = "about"
