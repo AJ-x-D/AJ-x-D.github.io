@@ -1,8 +1,8 @@
 [site]
 title = "Aojie Xu"
-description = "Aojie Xu studies historical maps, historical GIS and interpretable GeoAI at South China Normal University."
+description = "Aojie Xu, M.Sc. student at South China Normal University, studies historical GIS, intelligent map interpretation, interpretable GeoAI and spatiotemporal analysis, with prospective interests in digital humanities, HCI and AI for Science."
 favicon = "/favicon.svg?v=mountain-moon-1"
-last_updated = "October 2026"
+last_updated = "28 October 2026"
 
 [author]
 name = "Aojie Xu"
@@ -55,6 +55,13 @@ title = "Awards"
 type = "page"
 target = "awards"
 href = "/awards"
+
+
+[[navigation]]
+title = "Service"
+type = "page"
+target = "service"
+href = "/service"
 
 [[navigation]]
 title = "CV"

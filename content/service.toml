@@ -1,0 +1,30 @@
+type = "card"
+title = "Academic service & community engagement"
+description = "Academic exchange, teaching, peer review and community activities."
+
+[[items]]
+title = "Academic exchange"
+subtitle = "Youth Geoscience Forum · Fudan summer schools"
+content = "Presented research at the 11th Youth Geoscience Forum. Attended two summer schools at Fudan University’s Center for Historical Geographical Studies: the 17th programme on theories and advances in regional historical geography, and the 18th on historical geography’s evidential traditions and digital transformation."
+
+[[items]]
+title = "Teaching assistantships"
+subtitle = "Introduction to Remote Sensing · Remote Sensing Software Applications"
+content = "Served as a teaching assistant for both courses, including a focused teaching session and discussion on the relationship between AI and people."
+
+[[items]]
+title = "Journal peer review"
+subtitle = "IJGIS · JRS · npj Heritage Science"
+content = "Reviewer for the International Journal of Geographical Information Science (IJGIS), JRS and npj Heritage Science."
+
+[[items]]
+title = "National Games volunteering"
+content = "Volunteered at the 15th National Games of the People’s Republic of China."
+
+[[items]]
+title = "Internship at the Guangdong Youth Federation"
+content = "Contributed content production, editing and layout for the organisation’s WeChat public account."
+
+[[items]]
+title = "Student leadership and community research"
+content = "Former deputy director and staff member of the SCNU Youth Culture Centre; contributed to the university’s Zijin Youth WeChat account. Led the School of Geography’s Qingxin Lixing team for summer community fieldwork in 2022. Led two winter student-recruitment outreach teams and a winter social-practice research team."

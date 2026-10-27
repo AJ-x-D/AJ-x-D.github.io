@@ -8,7 +8,9 @@ This is the bilingual academic homepage of Aojie Xu, rebuilt from [PRISM](https:
 - `content_zh/` contains Chinese versions. The BibTeX entry is shared from `content/publications.bib`.
 - `public/profile.png` is the profile photo.
 
-Keep unpublished manuscripts out of `publications.bib` until their bibliographic details and publication status are confirmed. The manuscript currently under revision appears in Projects and CV with its status stated.
+Keep unpublished manuscripts out of `publications.bib`. The `manuscripts` section in each locale's `publications.toml` lists work under revision or being prepared for submission, with its status stated. `service.toml` contains academic service and community engagement.
+
+The bilingual content was updated on 28 October 2026 from `简历内容_详细版（放网页）.docx`, including three published articles, three manuscripts in progress, seven research projects, honours, service and the detailed CV.
 
 ## Run
 

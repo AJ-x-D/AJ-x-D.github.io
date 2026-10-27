@@ -1,80 +1,52 @@
 type = "card"
-title = "Research & practice projects"
-description = "Research on historical maps and land use, alongside earlier GIS, fieldwork and geography education projects."
+title = "Research projects"
+description = "Historical maps and rural memory, human–computer interaction, agricultural remote sensing and land-use research."
 
 [[items]]
-title = "Reconstructing Lingnan rural spatial memory with historical maps"
-subtitle = "Principal investigator · Guangdong Special Fund for Science and Technology Innovation Strategy"
+title = "Reconstructing Lingnan rural spatial memory and cultural revitalisation pathways through historical maps"
+subtitle = "Project lead · Guangdong Special Fund for Science and Technology Innovation Strategy (Student Innovation Cultivation)"
 date = "2026"
-content = "A CNY 30,000 project using historical maps to reconstruct village spatial memory and explore culturally grounded revitalisation pathways."
-tags = ["Historical maps", "Rural memory", "Lingnan"]
+content = "**CNY 30,000; one of 15 projects approved university-wide.** Funded by the Department of Science and Technology of Guangdong Province and the Guangdong Provincial Committee of the Communist Youth League. Integrates historical maps, local gazetteers, remote-sensing imagery and oral histories to reconstruct village public spaces and cultural memory, and explore memory preservation and cultural revitalisation."
+tags = ["Historical maps", "Rural public space", "Cultural memory"]
 
 [[items]]
-title = "Historical map database and landscape change in the Pearl River Delta since the Qing dynasty"
-subtitle = "Lead student participant · Guangdong Philosophy and Social Sciences Planning"
-date = "2025–"
-content = "Contributing to the proposal, historical map feature recognition and database construction, field investigation and analysis of landscape-change mechanisms. Supported through the programme for rare and specialised disciplines."
-tags = ["Historical GIS", "Spatial database", "Landscape change"]
+title = "Historical map database construction and landscape pattern evolution in the Pearl River Delta since the Qing Dynasty"
+subtitle = "First-ranked student participant · Guangdong Philosophy and Social Sciences Planning, Rare and Endangered Disciplines Programme"
+date = "2025 programme"
+content = "**Project GD25LMZTS01; CNY 50,000; principal investigator: Guilin Liu.** Independently wrote the funding proposal, reviewed the literature, refined the research questions and designed the technical approach. Participates in historical map feature identification, spatiotemporal database construction, field investigation and analysis of landscape evolution mechanisms."
+tags = ["Historical GIS", "Spatiotemporal databases", "Landscape evolution"]
 
 [[items]]
-title = "Digital reconstruction of Guangzhou’s urban spatial structure, 1840–2025"
-subtitle = "Proposal contributor · Lead student participant"
-date = "2025"
-content = "Contributed to a Guangzhou Philosophy and Social Sciences Planning grant proposal."
-tags = ["Urban historical geography", "Digital reconstruction", "Grant proposal"]
+title = "A keyboard system for pixel-level semantic-segmentation annotation of remote-sensing images"
+subtitle = "Team member (third-ranked) · SCNU Golden Seed extracurricular student research programme"
+date = "2025–2026"
+content = "Developed for image annotation in ArcMap, the project combines a microcontroller with USB HID keyboard and mouse emulation to integrate vertex construction, viewport following and step-size switching into a dedicated keyboard.\n\n**My contribution:** Early testing, human–computer interaction feature design and later testing.\n\n**Project outputs:** Three physical prototypes, one control programme and one utility-model patent arising from the project; passed the completion review in June 2026."
+tags = ["Human–computer interaction", "Remote-sensing annotation", "USB HID"]
 
 [[items]]
-title = "Spatiotemporal drivers of cropland abandonment"
-subtitle = "First-author manuscript · Under revision at Transactions in GIS"
-date = "Ongoing"
-content = "Combines GeoXAI and geographically and temporally weighted regression to examine heterogeneous associations and threshold responses in Guangdong. Responsible for data collection, method design, analysis, validation and writing."
-tags = ["GeoXAI", "GTWR", "Cropland abandonment"]
+title = "Effects of multi-year cotton planting patterns on yield through assimilation of optical remote sensing and crop models"
+subtitle = "Project participant · National Natural Science Foundation of China, General Programme"
+date = "2023.01–2026.12"
+content = "**Grant 42271346; principal investigator: Guilin Liu.** Integrates optical remote sensing and crop models to study how multi-year cotton planting patterns affect crop growth and yield. Wrote approximately 30%–40% of the proposal and contributed image-sample annotation and data processing during project implementation."
+tags = ["Optical remote sensing", "Crop modelling", "Cotton cultivation"]
 
 [[items]]
-title = "Mapping abandoned cropland and its drivers in cloudy subtropical regions using long-term remote sensing"
-subtitle = "Second project lead · SCNU Undergraduate Innovation and Entrepreneurship Training Programme"
-date = "Undergraduate"
-content = "Contributed to reporting, Google Earth Engine code, field investigation, driver analysis and the final presentation. The project received an Excellent completion rating."
-tags = ["Remote-sensing time series", "GEE", "Excellent completion"]
+title = "Spatiotemporal trade-offs and synergies among water, food and cotton, and optimisation of grain–cotton planting patterns in arid regions"
+subtitle = "Project participant · National Natural Science Foundation of China"
+date = "2027.01–2030.12"
+content = "**Scheduled project period: January 2027–December 2030; principal investigator: Guilin Liu.** Wrote approximately 50%–60% of the proposal, joined discussions of the core scientific questions, and contributed preparatory work including remote-sensing image annotation and data processing."
+tags = ["Spatiotemporal trade-offs", "Planting patterns", "Preparatory work"]
 
 [[items]]
-title = "Cropland recultivation governance: fieldwork in six villages in Zhanjiang"
-subtitle = "Project lead · First prize in the SCNU Challenge Cup"
-date = "2022.09–2023.01"
-content = "Planned fieldwork, coordinated village contacts, interviewed farmers, contractors and village committees, visited fields and prepared the research report."
-tags = ["Fieldwork", "Recultivation", "Rural governance"]
+title = "Tracing roots and building belonging: diagnosing and repairing ruptures in Lingnan rural spatial memory through GIS and oral history"
+subtitle = "Project member · SCNU School of Geography Zhouji Innovation and Entrepreneurship Incubation Programme"
+date = "2026"
+content = "**Project DKZJ202606; project lead: Zhixuan Dong.** Combines maps from multiple periods, remote-sensing imagery, village gazetteers and oral histories to locate ruptures in the memory of village public spaces, examine links with place identity and community cohesion, and explore ways to repair cultural memory. Guided the overall research approach and framework; the project grew out of the Climbing Programme project I lead."
+tags = ["GIS and oral history", "Place identity", "Cultural memory"]
 
 [[items]]
-title = "Resident perceptions and the safeguarding of Lechang Huagu opera"
-subtitle = "Project member"
-date = "2022.07–2022.09"
-content = "Planned fieldwork routes, contacted intangible-cultural-heritage practitioners, and contributed to questionnaire design, surveys and interviews."
-tags = ["Cultural heritage", "Resident perceptions", "Lechang"]
-
-[[items]]
-title = "Domestic communication effects of the Beijing 2022 Winter Olympics opening ceremony"
-subtitle = "Project lead"
-date = "2021.12–2022.03"
-content = "Designed survey scales, coordinated the team and conducted sentiment, word-frequency, social-network and semantic-network analyses."
-tags = ["Survey research", "Text analysis", "Social networks"]
-
-[[items]]
-title = "Science communication at Guangzhou Haizhu National Wetland Park"
-subtitle = "Project lead"
-date = "2021.10–2021.12"
-content = "Designed questionnaires, coordinated field surveys, performed descriptive statistics and reliability and validity checks, and helped compile the report."
-tags = ["Wetland park", "Science communication", "Questionnaire survey"]
-
-[[items]]
-title = "A context-aware geography field-study programme in Pingshi"
-subtitle = "Team leader · National second prize, Human Geography category"
-date = "2021.08–2021.12"
-content = "Designed a field-study programme about the wartime relocation of universities in South China. Organised fieldwork, interviews, team assignments and the activity schedule."
-tags = ["Field study", "Historical geography", "Pingshi"]
-
-[[items]]
-title = "Passenger-airport service capacity and air connectivity in the Greater Bay Area"
-subtitle = "Project lead"
-date = "2020.11–2021.07"
-content = "Coordinated the research design, selected accessibility models, contributed road vectorisation and delivered presentations and the project defence."
-tags = ["Transport geography", "Accessibility", "GIS"]
+title = "Abandoned-cropland identification and driver analysis using long-term remote-sensing imagery in cloudy, rainy subtropical regions"
+subtitle = "Second project lead · Student Innovation and Entrepreneurship Training Programme"
+date = "Undergraduate studies"
+content = "Contributed research reports, Google Earth Engine code, field investigation and the final presentation. The project received an Excellent completion rating. Provided the abandoned-cropland identification algorithm based on cultivated/uncultivated binary maps for the JAG article."
+tags = ["Remote-sensing time series", "Google Earth Engine", "Excellent completion"]

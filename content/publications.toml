@@ -1,4 +1,24 @@
 type = "publication"
-title = "Publications"
-description = "Published research. The manuscript in revision is listed under Projects and CV."
+title = "Published articles"
+description = "Three published articles, followed by manuscripts under revision or being prepared for submission."
 source = "publications.bib"
+
+[manuscripts]
+type = "card"
+title = "Manuscripts in progress"
+description = "One manuscript under revision and two being prepared for submission."
+
+[[manuscripts.items]]
+title = "Characterising Spatiotemporal Non-stationarity and Threshold Responses in Cropland Abandonment Using a GTWR–GeoXAI Workflow"
+subtitle = "Under revision · Transactions in GIS · First author"
+content = "**Aojie Xu**, Kejun Liu, Yuecheng Li, Zhuohang Ye, Guilin Liu."
+
+[[manuscripts.items]]
+title = "Projecting sugarcane suitability shifts in China under future climate scenarios."
+subtitle = "Preparing for submission · First author"
+content = "**Aojie Xu**, Yingchen Lin, Zibin Liang, Tianrui Zhou, Yongquan Lu, Guilin Liu."
+
+[[manuscripts.items]]
+title = "Mapping historical land cover in 1960s using object-based image analysis and Keyhole spy satellite images in Guangzhou."
+subtitle = "Preparing for submission · First author"
+content = "**Aojie Xu**, Tianrui Zhou, Guilin Liu."

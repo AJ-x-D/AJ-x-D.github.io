@@ -16,6 +16,7 @@ import { PublicationPageConfig } from '@/types/page';
 import { cn } from '@/lib/utils';
 import { useMessages } from '@/lib/i18n/useMessages';
 import FormattedBibTeXText from './FormattedBibTeXText';
+import CardPage from '@/components/pages/CardPage';
 
 interface PublicationsListProps {
     config: PublicationPageConfig;
@@ -339,6 +340,11 @@ export default function PublicationsList({ config, publications, embedded = fals
                     ))
                 )}
             </div>
+            {config.manuscripts && (
+                <section className="mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-800">
+                    <CardPage config={config.manuscripts} embedded />
+                </section>
+            )}
         </motion.div>
     );
 }

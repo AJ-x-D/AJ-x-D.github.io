@@ -1,4 +1,24 @@
 type = "publication"
-title = "论文"
-description = "已发表、可核验的研究成果。返修中论文列于项目与简历。"
+title = "已发表论文"
+description = "已发表论文 3 篇；返修中与准备投稿的论文另列于下方。"
 source = "publications.bib"
+
+[manuscripts]
+type = "card"
+title = "返修中与准备投稿"
+description = "返修中 1 篇，准备投稿 2 篇。"
+
+[[manuscripts.items]]
+title = "Characterising Spatiotemporal Non-stationarity and Threshold Responses in Cropland Abandonment Using a GTWR–GeoXAI Workflow"
+subtitle = "返修中 · Transactions in GIS · 第一作者"
+content = "**Aojie Xu**, Kejun Liu, Yuecheng Li, Zhuohang Ye, Guilin Liu."
+
+[[manuscripts.items]]
+title = "Projecting sugarcane suitability shifts in China under future climate scenarios."
+subtitle = "准备投稿 · 第一作者"
+content = "**Aojie Xu**, Yingchen Lin, Zibin Liang, Tianrui Zhou, Yongquan Lu, Guilin Liu."
+
+[[manuscripts.items]]
+title = "Mapping historical land cover in 1960s using object-based image analysis and Keyhole spy satellite images in Guangzhou."
+subtitle = "准备投稿 · 第一作者"
+content = "**Aojie Xu**, Tianrui Zhou, Guilin Liu."
