@@ -33,9 +33,6 @@ export default function Footer({ lastUpdated, lastUpdatedByLocale, defaultLocale
             <span className="ml-2">🚀</span>
           </p>
         </div>
-        <p lang="zh-CN" className="mt-4 text-sm text-neutral-500">
-          本站由 OpenAI Codex 协助制作。
-        </p>
       </div>
     </footer>
   );
