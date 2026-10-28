@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import WebAnalytics from '@/components/analytics/WebAnalytics';
 import Navigation from '@/components/layout/Navigation';
 import Footer from '@/components/layout/Footer';
 import LandscapeBackground from '@/components/layout/LandscapeBackground';
@@ -181,6 +182,7 @@ export default function RootLayout({
             />
           </LocaleProvider>
         </ThemeProvider>
+        <WebAnalytics />
       </body>
     </html>
   );
