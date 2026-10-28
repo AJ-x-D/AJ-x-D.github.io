@@ -33,8 +33,8 @@ The repository's Settings → Pages → Source must be set to **GitHub Actions**
 
 ## Private visitor statistics
 
-Cloudflare Web Analytics is loaded after the page becomes interactive in production,
-when `NEXT_PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN` is configured. Development builds
+Cloudflare Web Analytics uses the provider's standard deferred module script in
+production, when `NEXT_PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN` is configured. Development builds
 and builds without a token do not load analytics. The beacon supports client-side
 page navigation and adds no visible counter, map, badge or dashboard link.
 

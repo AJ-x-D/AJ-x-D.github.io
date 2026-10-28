@@ -1,5 +1,3 @@
-import Script from 'next/script';
-
 export default function WebAnalytics() {
   const token = process.env.NEXT_PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN;
 
@@ -8,12 +6,12 @@ export default function WebAnalytics() {
   }
 
   return (
-    <Script
+    <script
       id="cloudflare-web-analytics"
       src="https://static.cloudflareinsights.com/beacon.min.js"
       type="module"
+      defer
       data-cf-beacon={JSON.stringify({ token, spa: true })}
-      strategy="afterInteractive"
     />
   );
 }
