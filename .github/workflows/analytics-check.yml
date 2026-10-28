@@ -1,0 +1,31 @@
+name: Check analytics connectivity
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check the official beacon and reporting endpoint
+        shell: bash
+        run: |
+          curl --fail --silent --show-error --max-time 30 --dump-header beacon.headers https://static.cloudflareinsights.com/beacon.min.js --output beacon.min.js
+          cat beacon.headers
+          python3 - <<'PY'
+          import pathlib
+          import re
+
+          source = pathlib.Path('beacon.min.js').read_text()
+          print('Beacon length:', len(source))
+          for pattern in ('currentScript', 'data-cf-beacon', 'readyState', 'sendBeacon', 'cloudflareinsights.com', 'siteToken', 'visibilitychange'):
+              print('\n---', pattern, '---')
+              for match in list(re.finditer(re.escape(pattern), source))[:5]:
+                  print(source[max(0, match.start() - 180):match.end() + 250])
+          PY
+          curl --silent --show-error --max-time 30 --dump-header rum.headers --request OPTIONS --header 'Origin: https://aj-x-d.github.io' --header 'Access-Control-Request-Method: POST' https://cloudflareinsights.com/cdn-cgi/rum --output rum.body
+          cat rum.headers
+          head -c 1000 rum.body
