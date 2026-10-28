@@ -33,7 +33,7 @@ The repository's Settings → Pages → Source must be set to **GitHub Actions**
 
 ## Private visitor statistics
 
-Cloudflare Web Analytics uses the provider's standard deferred module script in
+Cloudflare Web Analytics uses the provider's standard deferred script in
 production, when `NEXT_PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN` is configured. Development builds
 and builds without a token do not load analytics. The beacon supports client-side
 page navigation and adds no visible counter, map, badge or dashboard link.
@@ -53,6 +53,9 @@ Cloudflare Web Analytics dashboard. No public dashboard is linked from the websi
 Cloudflare Web Analytics does not use analytics cookies. Browser developer tools
 can still reveal the script and its network requests; this is not undetectable tracking.
 Collection begins only after activation; earlier visits cannot be reconstructed.
+Browsers or networks that block the analytics script or reporting endpoint are
+not counted. A working homepage does not guarantee that these separate requests
+are allowed.
 
 For a local production build, set `NEXT_PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN` in
 `.env.local` before running `npm run build`. Leave it unset for ordinary previews
