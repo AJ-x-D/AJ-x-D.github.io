@@ -1,0 +1,65 @@
+name: Validate published analytics
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install the browser validation tools
+        run: |
+          command -v npx
+          mkdir -p "$RUNNER_TEMP/analytics-validation"
+          cd "$RUNNER_TEMP/analytics-validation"
+          npm install --no-save --package-lock=false playwright
+          npx playwright install --with-deps chromium
+      - name: Verify that the official beacon uploads successfully
+        working-directory: ${{ runner.temp }}/analytics-validation
+        run: |
+          node <<'JS'
+          const { chromium } = require('playwright');
+
+          (async () => {
+            const browser = await chromium.launch();
+            const page = await browser.newPage();
+            let acceptedUploads = 0;
+
+            page.on('response', response => {
+              if (!response.url().includes('cloudflareinsights.com')) return;
+              const method = response.request().method();
+              const status = response.status();
+              console.log(JSON.stringify({ kind: 'analytics-response', method, status, url: response.url() }));
+              if (method === 'POST' && status >= 200 && status < 300) acceptedUploads++;
+            });
+            page.on('requestfailed', request => {
+              if (request.url().includes('cloudflareinsights.com')) {
+                console.log(JSON.stringify({ kind: 'analytics-failure', url: request.url(), error: request.failure() }));
+              }
+            });
+            page.on('pageerror', error => console.log('PAGE ERROR:', error.message));
+
+            try {
+              await page.goto('https://aj-x-d.github.io/?analytics-validation=1', { waitUntil: 'load' });
+              await page.waitForTimeout(15000);
+              console.log(JSON.stringify(await page.evaluate(() => ({
+                title: document.title,
+                configured: Boolean(window.__cfBeacon && window.__cfBeacon.token),
+                scriptCount: document.querySelectorAll('script[data-cf-beacon]').length,
+              }))));
+              await page.close();
+              await new Promise(resolve => setTimeout(resolve, 2000));
+              console.log(JSON.stringify({ acceptedUploads }));
+              if (acceptedUploads === 0) process.exitCode = 1;
+            } finally {
+              await browser.close();
+            }
+          })().catch(error => { console.error(error); process.exitCode = 1; });
+          JS
